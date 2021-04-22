@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "310520240688",
+    "firebase_url": "https://kelly2-b0538-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "kelly2-b0538",
+    "storage_bucket": "kelly2-b0538.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310520240688:android:3f7057027d2e1a3d55abf5",
+        "android_client_info": {
+          "package_name": "ie.wit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310520240688-vfa589p2h697h2gl1tg98c86msqp9err.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-y_4V4FayPm-wgS58Pic7LJ6Ps2YTNs0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310520240688-vfa589p2h697h2gl1tg98c86msqp9err.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

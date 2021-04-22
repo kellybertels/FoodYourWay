@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8ca81e</color>
+    <color name="colorPrimaryDark">#d63f29</color>
+    <color name="colorAccent">#162704</color>
+    <color name="ic_launcher_homer_background">#FFFFFF</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="grey_100">#e39715 </color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_500">#9E9E9E</color>
+
+
+</resources>
+
+   <!-- yellow #e39715    avocado green #8ca81e  black green #162704  warm orangy red #d63f29  blackred #080404-->
