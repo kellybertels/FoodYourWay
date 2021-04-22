@@ -1,0 +1,30 @@
+package ie.wit.models
+
+data class Result(
+    val aggregateLikes: Int,
+    val cheap: Boolean,
+    val cuisines: List<String>,
+    val dairyFree: Boolean,
+    val diets: List<String>,
+    val dishTypes: List<String>,
+    val extendedIngredients: List<ExtendedIngredient>,
+    val gaps: String,
+    val glutenFree: Boolean,
+    val healthScore: Double,
+    val id: Int,
+    val image: String,
+    val likes: Int,
+    val lowFodmap: Boolean,
+    val occasions: List<String>,
+    val preparationMinutes: Int,
+    val pricePerServing: Double,
+    val readyInMinutes: Int,
+    val sourceName: String,
+    val sourceUrl: String,
+    val summary: String,
+    val title: String,
+    val vegan: Boolean,
+    val vegetarian: Boolean,
+    val veryHealthy: Boolean,
+
+)
