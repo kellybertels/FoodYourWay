@@ -9,7 +9,7 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
     defaultConfig {
-        applicationId "ie.wit"
+        applicationId "ie.wit_student"
         minSdkVersion 29
         targetSdkVersion 30
         versionCode 1
