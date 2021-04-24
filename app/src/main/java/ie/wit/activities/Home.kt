@@ -14,10 +14,9 @@ import com.google.android.material.snackbar.Snackbar
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import ie.wit.R
-import ie.wit.fragments.AboutUsFragment
-import ie.wit.fragments.FoodFragment
-import ie.wit.fragments.AllOrdersFragment
-import ie.wit.fragments.BasketFragment
+import ie.wit.fragments.*
+//import ie.wit.fragments.RecipesFragment.RecipesFragment.Companion.newInstance
+//import.ie.wit.fragments.RecipesFragment.companion.newInstance
 import ie.wit.main.FYWApp
 import ie.wit.utils.*
 import jp.wasabeef.picasso.transformations.CropCircleTransformation
@@ -75,6 +74,9 @@ class Home : AppCompatActivity(),
                 navigateTo(BasketFragment.newInstance())
             R.id.nav_orders_all ->
                 navigateTo(AllOrdersFragment.newInstance())
+            R.id.nav_favourites->
+             //   navigateTo(BasketFragment.newInstance())
+                navigateTo(RecipesFragment.newInstance())
             R.id.nav_aboutus ->
                 navigateTo(AboutUsFragment.newInstance())
             R.id.nav_sign_out -> signOut()

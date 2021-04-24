@@ -62,5 +62,8 @@ class FAdapter constructor(var products: ArrayList<FoodModel>,
             else
                 itemView.imageIcon.setImageResource(R.mipmap.ic_launcher_homer_round)
         }
+
+
+
     }
 }
