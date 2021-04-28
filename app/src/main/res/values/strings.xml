@@ -38,7 +38,8 @@
 
     <string name="action_edit">Edit Order</string>
     <string name="action_update">Update</string>
-    <string name="message_edit">Please Update your Details Below</string>
+    <string name="message_edit">Please Update the order Details Below</string>
+    <string name="img_button">Change Recipe Image</string>
 
     <!-- START Firebase Resources-->
 

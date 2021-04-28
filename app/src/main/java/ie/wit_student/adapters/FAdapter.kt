@@ -43,6 +43,7 @@ class FAdapter constructor(var products: ArrayList<FoodModel>,
         notifyItemRemoved(position)
     }
 
+    //constructs the RecyclerView for the list of products in Basket
     class MainHolder constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(product: FoodModel, listener: OrdersListener, reportAll: Boolean) {
@@ -53,6 +54,8 @@ class FAdapter constructor(var products: ArrayList<FoodModel>,
             if(!reportAll)
                 itemView.setOnClickListener { listener.onOrderClick(product) }
 
+//if product has an image set this image else sets a "brocoli" default image.// profilepic is the image or the product.
+
             if(!product.profilepic.isEmpty()) {
                 Picasso.get().load(product.profilepic.toUri())
                     //.resize(180, 180)
@@ -60,7 +63,7 @@ class FAdapter constructor(var products: ArrayList<FoodModel>,
                     .into(itemView.imageIcon)
             }
             else
-                itemView.imageIcon.setImageResource(R.mipmap.ic_launcher_homer_round)
+                itemView.imageIcon.setImageResource(R.mipmap.ic_brocoli)
         }
 
 

@@ -41,7 +41,7 @@ fun createLoader(activity: FragmentActivity) : AlertDialog {
         .setView(R.layout.loading)
     var loader = loaderBuilder.create()
     loader.setTitle(R.string.app_name)
-    loader.setIcon(R.mipmap.ic_launcher_homer_round)
+    loader.setIcon(R.mipmap.ic_brocoli)
 
     return loader
 }
@@ -192,9 +192,9 @@ fun validatePhoto(app: FYWApp, activity: Activity) {
                 override fun onError(e: Exception) {}
             })
     }
-    else    // New Regular User, upload default pic of homer
+    else    // New Regular User, upload default pic of A Brocoli
     {
-        activity.navView.getHeaderView(0).imageView.setImageResource(R.mipmap.ic_launcher_homer_round)
+        activity.navView.getHeaderView(0).imageView.setImageResource(R.mipmap.ic_brocoli)
         uploadImageView(app, activity.navView.getHeaderView(0).imageView)
     }
 }
@@ -208,6 +208,7 @@ fun checkExistingPhoto(app: FYWApp,activity: Activity) {
         .equalTo(app.auth.currentUser!!.uid)
         .addListenerForSingleValueEvent(object : ValueEventListener {
 
+            //updates the photo of the user in the database? user_Image ( or product?)
         override fun onDataChange(snapshot: DataSnapshot ) {
             snapshot.children.forEach {
                 val usermodel = it.getValue<UserPhotoModel>(UserPhotoModel::class.java)

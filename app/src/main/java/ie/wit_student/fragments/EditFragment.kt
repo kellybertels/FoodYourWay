@@ -1,7 +1,9 @@
 package ie.wit_student.fragments
 
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -59,8 +61,29 @@ class EditFragment : Fragment(), AnkoLogger {
                                editOrder!!.uid, editOrder!!)
         }
 
+
+        root.editImageButton.setOnClickListener {
+            //showLoader(loader,"Try to show photo selector")
+
+            // Code that doesnt link with what I have ( attempted)
+    //val intent =Intent(Intent.ACTION_PICK)
+        //    intent.type="image/*"
+         //   startActivityForResult(intent, targetRequestCode)
+
+            //showLoader(loader, "Updating Image Server...")
+            /*updateOrderData()
+            updateOrder(editOrder!!.uid, editOrder!!)
+            updateUserOrder(app.auth.currentUser!!.uid,
+                    editOrder!!.uid, editOrder!!)*/
+        }
+     /*   override_fun onActivityResult(requestCode:Int, resultCode:Int,data:Intent?){
+            super.onActivityResult(targetRequestCode,resultCode,data)
+        }*/
+
         return root
     }
+
+
 
     companion object {
         @JvmStatic

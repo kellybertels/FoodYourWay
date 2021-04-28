@@ -75,7 +75,6 @@ class Home : AppCompatActivity(),
             R.id.nav_orders_all ->
                 navigateTo(AllOrdersFragment.newInstance())
             R.id.nav_favourites->
-             //   navigateTo(BasketFragment.newInstance())
                 navigateTo(RecipesFragment.newInstance())
             R.id.nav_aboutus ->
                 navigateTo(AboutUsFragment.newInstance())
@@ -95,8 +94,8 @@ class Home : AppCompatActivity(),
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId) {
-            R.id.action_donate -> toast("You Selected Donate")
-            R.id.action_report -> toast("You Selected Report")
+            R.id.action_donate -> toast("You Selected Settings")
+            R.id.action_report -> toast("You Selected Contact")
         }
         return super.onOptionsItemSelected(item)
     }
