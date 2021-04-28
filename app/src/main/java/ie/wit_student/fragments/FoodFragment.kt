@@ -19,7 +19,6 @@ import kotlinx.android.synthetic.main.fragment_list.*
 import kotlinx.android.synthetic.main.fragment_list.view.*
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
-import org.jetbrains.anko.toast
 import java.lang.String.format
 import java.util.HashMap
 
@@ -72,7 +71,9 @@ class FoodFragment : Fragment(), AnkoLogger {
 
 
 
-                val alergens = if(layout.alergensGroup.checkedRadioButtonId == R.id.GlutenFree) "Glutenfree" else "DairyFree"
+                val alergens =
+                       if(layout.alergensGroup.checkedRadioButtonId == R.id.GlutenFree2) "GlutenFree"
+                else "DairyFree"
 
                 writeNewOrder(FoodModel(paymenttype = alergens, amount = amount,
                                                profilepic = app.userImage.toString(),

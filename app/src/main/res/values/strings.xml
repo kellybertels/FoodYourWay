@@ -7,7 +7,9 @@
     <string name="addButton">Add to Basket</string>
     <string name="glutenfree">GlutenFree</string>
     <string name="dairyfree">DairyFree</string>
+    <string name="vegan">Vegan</string>
     <string name="amount">Amount</string>
+    <string name="messageDesc">Description of the product goes here.</string>
     <string name="total">Total so Far</string>
     <string name="totalSoFar">$ Total</string>
     <string name="basketTitle">Title</string>

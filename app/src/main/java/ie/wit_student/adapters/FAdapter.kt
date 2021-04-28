@@ -10,6 +10,10 @@ import ie.wit_student.R
 import ie.wit_student.models.FoodModel
 import jp.wasabeef.picasso.transformations.CropCircleTransformation
 import kotlinx.android.synthetic.main.card_product.view.*
+import kotlinx.android.synthetic.main.card_product.view.alergensGroup
+import kotlinx.android.synthetic.main.fragment_edit.view.*
+import kotlinx.android.synthetic.main.fragment_list.view.*
+
 
 interface OrdersListener {
     fun onOrderClick(product: FoodModel)
@@ -50,11 +54,14 @@ class FAdapter constructor(var products: ArrayList<FoodModel>,
             itemView.tag = product
             itemView.paymentamount.text = product.amount.toString()
             itemView.alergensGroup.text = product.paymenttype
+           // itemView.appSubtitle.text =product.message
+            itemView.messageDesc.text = product.message
 
             if(!reportAll)
                 itemView.setOnClickListener { listener.onOrderClick(product) }
 
 //if product has an image set this image else sets a "brocoli" default image.// profilepic is the image or the product.
+            else
 
             if(!product.profilepic.isEmpty()) {
                 Picasso.get().load(product.profilepic.toUri())

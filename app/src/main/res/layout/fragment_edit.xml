@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:layout_marginRight="5dp"
-        android:text="Message :"
+        android:text="Product Description :"
         android:textAlignment="viewEnd"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="24sp"
