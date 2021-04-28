@@ -45,7 +45,7 @@ class FoodFragment : Fragment(), AnkoLogger {
         loader = createLoader(activity!!)
         activity?.title = getString(R.string.action_donate)
 
-        root.progressBar.max = 10
+
         root.amountPicker.minValue = 1
         root.amountPicker.maxValue = 10
 
@@ -69,14 +69,15 @@ class FoodFragment : Fragment(), AnkoLogger {
         layout.addButton.setOnClickListener {
             val amount = if (layout.paymentAmount.text.isNotEmpty())
                 layout.paymentAmount.text.toString().toInt() else layout.amountPicker.value
-            if(totalDonated >= layout.progressBar.max)
-                activity?.toast("Donate Amount Exceeded!")
-            else {
+
+
+
                 val alergens = if(layout.alergensGroup.checkedRadioButtonId == R.id.GlutenFree) "Glutenfree" else "DairyFree"
+
                 writeNewOrder(FoodModel(paymenttype = alergens, amount = amount,
                                                profilepic = app.userImage.toString(),
                                                email = app.auth.currentUser?.email))
-            }
+
         }
     }
 
@@ -127,7 +128,7 @@ class FoodFragment : Fragment(), AnkoLogger {
                     val product = it.getValue<FoodModel>(FoodModel::class.java)
                     totalDonated += product!!.amount
                 }
-                progressBar.progress = totalDonated
+
                 totalSoFar.text = format("$ $totalDonated")
             }
         }

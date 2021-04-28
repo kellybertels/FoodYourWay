@@ -69,7 +69,6 @@
         android:id="@+id/alergensGroup"
         android:layout_width="181dp"
         android:layout_height="128dp"
-        android:layout_above="@+id/progressBar"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/appSubtitle"
         android:layout_marginBottom="8dp"
@@ -116,25 +115,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.333" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="349dp"
-        android:layout_height="14dp"
-        android:layout_above="@+id/addButton"
-        android:layout_alignEnd="@+id/appSubtitle"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:indeterminate="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+
 
     <TextView
         android:id="@+id/amount"
