@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -22,10 +21,10 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/addButton"
@@ -33,10 +32,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/addButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,69 +44,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.948" />
 
-    <RadioGroup
-        android:id="@+id/alergensGroup"
-        android:layout_width="181dp"
-        android:layout_height="128dp"
-        android:layout_below="@+id/appTitle"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_toStartOf="@+id/amountPicker"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/appTitle"
-        app:layout_constraintVertical_bias="0.0">
-
-        <RadioButton
-            android:id="@+id/DairyFree"
-            android:layout_width="97dp"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/dairyfree" />
-
-        <RadioButton
-            android:id="@+id/GlutenFree2"
-            android:layout_width="114dp"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="@string/glutenfree" />
-
-        <CheckBox
-            android:id="@+id/GlutenFree"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/glutenfree" />
-
-        <CheckBox
-            android:id="@+id/Vegan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:checked="false"
-            android:text="@string/vegan" />
-    </RadioGroup>
-
-
-    <NumberPicker
-        android:id="@+id/amountPicker"
-        style="@android:style/Widget.Material.NumberPicker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@id/amount"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.915"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
 
     <TextView
         android:id="@+id/amount"
@@ -130,10 +66,10 @@
         android:id="@+id/total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/total"
         android:textAppearance="@android:style/TextAppearance.Material.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -147,10 +83,10 @@
         android:id="@+id/totalSoFar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/totalSoFar"
         android:textAppearance="@android:style/TextAppearance.Material.Medium"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -188,10 +124,183 @@
         android:layout_marginBottom="8dp"
         android:text="@string/messageDesc"
         app:layout_constraintBottom_toTopOf="@+id/amount"
-        app:layout_constraintEnd_toStartOf="@+id/alergensGroup"
-        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appTitle"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintVertical_bias="0.894" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="269dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.595">
+
+
+        <ImageView
+            android:id="@+id/imageIconProduct"
+            android:layout_width="140dp"
+            android:layout_height="148dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            app:srcCompat="@mipmap/ic_vburger" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-133dp"
+            android:layout_marginTop="205dp"
+            android:layout_marginEnd="251dp"
+            android:layout_toEndOf="@+id/imageIconProduct"
+            android:text="TextView"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            tools:text="@string/price" />
+
+        <TextView
+            android:id="@+id/productTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageIconProduct"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/imageIconProduct"
+            android:text="@string/dairyfree"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/vegan_icon"
+            android:layout_width="49dp"
+            android:layout_height="37dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="199dp"
+            android:layout_marginEnd="176dp"
+            android:layout_marginBottom="200dp"
+            android:src="@drawable/ic_vegan" />
+
+        <ImageView
+            android:id="@+id/dairy_icon"
+            android:layout_width="50dp"
+            android:layout_height="34dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="199dp"
+            android:layout_marginEnd="131dp"
+            android:layout_marginBottom="200dp"
+            android:src="@drawable/ic_dairyfree" />
+
+        <ImageView
+            android:id="@+id/gluten_icon"
+            android:layout_width="36dp"
+            android:layout_height="39dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="198dp"
+            android:layout_marginEnd="97dp"
+            android:src="@drawable/ic_glutenfree" />
+
+        <TextView
+            android:id="@+id/description_textView"
+            android:layout_width="140dp"
+            android:layout_height="63dp"
+            android:layout_below="@+id/imageIconProduct"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="22dp"
+            android:text="Recipe Description" />
+
+    </RelativeLayout>
+
+    <NumberPicker
+        android:id="@+id/amountPicker"
+        style="@android:style/Widget.Material.NumberPicker"
+        android:layout_width="61dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/paymentAmount"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle" />
+
+    <RadioGroup
+        android:id="@+id/alergensGroup"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toStartOf="@+id/food_spinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle">
+
+        <RadioButton
+            android:id="@+id/DairyFree"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/dairyfree" />
+
+        <RadioButton
+            android:id="@+id/GlutenFree2"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/glutenfree" />
+
+        <CheckBox
+            android:id="@+id/GlutenFree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/glutenfree" />
+
+        <CheckBox
+            android:id="@+id/Vegan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/vegan" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/food_spinner"
+        android:layout_width="123dp"
+        android:layout_height="128dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toStartOf="@+id/filterButton"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="@+id/appTitle"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <Button
+        android:id="@+id/filterButton"
+        android:layout_width="76dp"
+        android:layout_height="95dp"
+        android:text="filter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

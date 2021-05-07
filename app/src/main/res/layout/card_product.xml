@@ -19,9 +19,11 @@
             android:layout_height="64dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="55dp"
             android:layout_marginRight="16dp"
-            app:srcCompat="@mipmap/ic_brocoli"
-            android:contentDescription="Default image showing, brocoli"/>
+            android:contentDescription="Default image showing, brocoli"
+            app:srcCompat="@mipmap/ic_brocoli" />
 
         <TextView
             android:id="@+id/paymentamount"
@@ -74,6 +76,16 @@
             android:layout_toEndOf="@id/alergensGroup"
             android:contentDescription="image of V"
             app:srcCompat="@android:drawable/checkbox_on_background" />
+
+        <TextView
+            android:id="@+id/textItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alergensGroup"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="110dp"
+            android:text="TextView" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

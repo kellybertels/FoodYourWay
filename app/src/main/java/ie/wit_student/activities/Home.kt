@@ -1,12 +1,17 @@
 package ie.wit_student.activities
 
+import android.app.SearchManager
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.widget.SearchView
 import androidx.core.view.GravityCompat
+import androidx.databinding.adapters.SearchViewBindingAdapter.setOnQueryTextListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.navigation.NavigationView
@@ -26,6 +31,9 @@ import kotlinx.android.synthetic.main.nav_header_home.*
 import kotlinx.android.synthetic.main.nav_header_home.view.*
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
+import androidx.databinding.adapters.SearchViewBindingAdapter.setOnQueryTextListener
+
+
 
 class Home : AppCompatActivity(),
     NavigationView.OnNavigationItemSelectedListener {
@@ -96,9 +104,41 @@ class Home : AppCompatActivity(),
         when (item.itemId) {
             R.id.action_donate -> toast("You Selected Settings")
             R.id.action_report -> toast("You Selected Contact")
+          //  R.id.app_bar_search -> kellySearch()
+
+
+
+
         }
         return super.onOptionsItemSelected(item)
     }
+
+
+   /* override fun kellySearch(){
+
+        val manager = getSystemService(SEARCH_SERVICE) as SearchManager
+        val searchItem = menu.findItem (R.id.app_bar_search)
+        val searchView = searchItem?.actionView as SearchView
+
+
+        searchView.setSearchableInfo(manager.getSearchableInfor(componentName))
+
+        SearchView.setOnQueryTextListener (object : SearchView.OnQueryTextListener{
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                searchView.clearFocus()
+                searchView.setQuery(query"",false)
+                searchItem.collapseActionView()
+                Toast.makeText(this@MainActivity, text "Looking for $query", Toast.LENGTH_LONG).show()
+                return true
+            }
+            override fun onQueryTextChange(newText:String?):Boolean{
+                return false
+            }
+        })
+    }
+
+*/
+
 
     override fun onBackPressed() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START))

@@ -7,6 +7,7 @@ import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import ie.wit_student.R
+import ie.wit_student.fragments.FoodFragment
 import ie.wit_student.models.FoodModel
 import jp.wasabeef.picasso.transformations.CropCircleTransformation
 import kotlinx.android.synthetic.main.card_product.view.*
@@ -19,8 +20,8 @@ interface OrdersListener {
     fun onOrderClick(product: FoodModel)
 }
 
-class FAdapter constructor(var products: ArrayList<FoodModel>,
-                                  private val listener: OrdersListener, reportall : Boolean)
+class FAdapter(var products: ArrayList<FoodModel>,
+               private val listener: OrdersListener, reportall: Boolean)
     : RecyclerView.Adapter<FAdapter.MainHolder>() {
 
     val reportAll = reportall
@@ -56,6 +57,7 @@ class FAdapter constructor(var products: ArrayList<FoodModel>,
             itemView.alergensGroup.text = product.paymenttype
            // itemView.appSubtitle.text =product.message
             itemView.messageDesc.text = product.message
+            itemView.textItemName.text = product.foodname
 
             if(!reportAll)
                 itemView.setOnClickListener { listener.onOrderClick(product) }

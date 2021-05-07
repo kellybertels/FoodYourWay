@@ -10,13 +10,17 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class FoodModel(
     var uid: String? = "",
-    var paymenttype: String = "N/A",
+    var paymenttype: String = "N/A ",
     var amount: Int = 0,
     var message: String = "a message",
-
+    var foodname: String ="Item Name",
     var upvotes: Int = 0,
     var profilepic: String = "",
-    var email: String? = "joe@bloggs.com")
+    var email: String? = "joe@bloggs.com",
+    //var dairy: String = "dairy",
+   // var gluten: String = "gluten"
+
+)
     : Parcelable
 {
     @Exclude
@@ -26,7 +30,7 @@ data class FoodModel(
             "alergens" to paymenttype,
             "amount" to amount,
             "message" to message,
-
+            "foodname" to foodname,
             "upvotes" to upvotes,
             "profilepic" to profilepic,
             "email" to email

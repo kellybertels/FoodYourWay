@@ -10,6 +10,13 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:orderInCategory="101"
+        android:title="Search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+    <item
         android:id="@+id/action_donate"
         android:orderInCategory="100"
         android:title="@string/action_donate"
