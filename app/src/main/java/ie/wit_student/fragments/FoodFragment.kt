@@ -239,15 +239,15 @@ val childrenKelly =snapshot.children
                 //Todo: Replace here this code for a code that will populate my listview
                 //this code is geting totaldonated that is zero and geting snapshot from children, for each children value of item, it.getValue food model
                 //output in totaldonated adding up with the amount I had
-             //   totalDonated = 0
-            //    val children = snapshot.children
-            //    children.forEach {
-            //        val product = it.getValue<FoodModel>(FoodModel::class.java)
+                totalDonated = 0
+                val children = snapshot.children
+                children.forEach {
+                   val product = it.getValue<FoodModel>(FoodModel::class.java)
                     //calculation to add up total donated with amount
-            //        totalDonated += product!!.amount
-           //     }
+                    totalDonated += product!!.amount
+                }
                 //totalSoFar is an id
-           //     totalSoFar.text = format("$ $totalDonated")
+                totalSoFar.text = ("$ $totalDonated")
                 //
 
             }

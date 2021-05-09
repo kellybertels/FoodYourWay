@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Food Your Way</string>
-    <string name="action_donate">Buy</string>
-    <string name="action_report">Basket</string>
+    <string name="action_donate">Settings</string>
+    <string name="action_basket_name">Basket</string>
+    <string name="text_basket_edit">Slide Right to edit your order</string>
+    <string name="text_basket_delete">Slide Left to delete your order</string>
     <string name="appTitle">Welcome to FWY</string>
     <string name="appSubtitle">Please Give Generously</string>
     <string name="addButton">Add to Basket</string>
@@ -9,7 +11,8 @@
     <string name="productTitle">Product Name</string>
     <string name="vegan">Vegan</string>
     <string name="amount">Amount</string>
-    <string name="messageDesc">Description of the product goes here.</string>
+    <string name="messageDesc">User message.</string> //basket layout
+    <string name="messageDescription">Description of the product</string> //menu layout
     <string name="total">Total so Far</string>
     <string name="totalSoFar">$ Total</string>
     <string name="basketTitle">Title</string>

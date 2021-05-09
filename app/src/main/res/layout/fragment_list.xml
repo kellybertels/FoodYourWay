@@ -122,7 +122,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/messageDesc"
+        android:text="@string/messageDescription"
         app:layout_constraintBottom_toTopOf="@+id/amount"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -134,7 +134,6 @@
         android:layout_width="match_parent"
         android:layout_height="269dp"
         android:background="#1D9E9D24"
-
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -155,13 +154,13 @@
 
         <TextView
             android:id="@+id/price"
-            android:layout_width="116dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_below="@+id/productTitle"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="-133dp"
-            android:layout_marginTop="205dp"
-            android:layout_marginEnd="261dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="118dp"
             android:layout_toEndOf="@+id/imageIconProduct"
             android:text="TextView"
             android:textAlignment="viewStart"
@@ -189,7 +188,6 @@
             android:layout_height="37dp"
             android:layout_below="@+id/productTitle"
             android:layout_alignBottom="@+id/price"
-
             android:layout_alignParentEnd="true"
             android:layout_marginTop="162dp"
             android:layout_marginEnd="105dp"
@@ -223,14 +221,14 @@
 
         <TextView
             android:id="@+id/quantity_textView"
-            android:layout_width="69dp"
-            android:layout_height="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
             android:layout_above="@+id/amountPicker"
             android:layout_below="@+id/productTitle"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="326dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginBottom="23dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
             android:text="@string/quantity_textView" />
 
         <NumberPicker

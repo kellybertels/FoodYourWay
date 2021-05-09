@@ -43,7 +43,7 @@ open class BasketFragment : Fragment(), AnkoLogger,
     ): View? {
         // Inflate the layout for this fragment
         root = inflater.inflate(R.layout.fragment_basket, container, false)
-        activity?.title = getString(R.string.action_report)
+        activity?.title = getString(R.string.action_basket_name)
 
         root.recyclerView.setLayoutManager(LinearLayoutManager(activity))
         setSwipeRefresh()
