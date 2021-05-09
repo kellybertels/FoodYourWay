@@ -55,7 +55,7 @@ class FAdapter(var products: ArrayList<FoodModel>,
             itemView.tag = product
             itemView.paymentamount.text = product.amount.toString()
             itemView.alergensGroup.text = product.paymenttype
-           // itemView.appSubtitle.text =product.message
+           //itemView.appSubtitle.text =product.message
             itemView.messageDesc.text = product.message
             itemView.textItemName.text = product.foodname
 

@@ -67,7 +67,7 @@ class FoodFragment : Fragment(), AnkoLogger {
                 foodname= parent.getItemAtPosition(position) as String
 
                 //tests if the array selected works showing id and position in the array food_array
-                showLoader(loader, "onItemSelected position = $position id = $id")
+              //  showLoader(loader, "onItemSelected position = $position id = $id")
                // info("onItemSelected position = $position id = $id")
             }
 
@@ -113,6 +113,7 @@ class FoodFragment : Fragment(), AnkoLogger {
                                 profilepic = app.userImage.toString(),
                                 email = app.auth.currentUser?.email,
                                 foodname = foodname
+
 
                         ),
                                   //dairy = dairy,
