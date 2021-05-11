@@ -39,8 +39,8 @@
     <string name="menu_basket">Basket</string>
     <string name="menu_recipes">All Recipes</string>
     <string name="menu_about">About Us</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="menu_share">Create Own Recipe</string>
+    <string name="menu_send">Payment Details</string>
 
     <string name="aboutus_title">Food you way </string>
     <string name="aboutus_message">We want to make your happy, we are specialised,\n\nin Making Delicious Healthy Foods for you.\n\n Let us know how you feel!</string>
