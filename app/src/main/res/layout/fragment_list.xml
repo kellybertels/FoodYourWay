@@ -155,18 +155,17 @@
         <TextView
             android:id="@+id/price"
             android:layout_width="wrap_content"
-            android:layout_height="43dp"
+            android:layout_height="42dp"
             android:layout_below="@+id/productTitle"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="-2dp"
             android:layout_marginTop="19dp"
             android:layout_marginEnd="118dp"
             android:layout_toEndOf="@+id/imageIconProduct"
-            android:text="TextView"
+            android:text="@string/price"
             android:textAlignment="viewStart"
             android:textColor="#000000"
-            android:textSize="24sp"
-            tools:text="@string/price" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/productTitle"
@@ -221,14 +220,14 @@
 
         <TextView
             android:id="@+id/quantity_textView"
-            android:layout_width="wrap_content"
-            android:layout_height="24dp"
+            android:layout_width="96dp"
+            android:layout_height="18dp"
             android:layout_above="@+id/amountPicker"
             android:layout_below="@+id/productTitle"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="320dp"
+            android:layout_marginStart="290dp"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="35dp"
             android:text="@string/quantity_textView" />
 
         <NumberPicker

@@ -34,6 +34,8 @@ class FoodFragment : Fragment(), AnkoLogger {
     lateinit var app: FYWApp
     var totalDonated = 0
     lateinit var loader : AlertDialog
+   // private lateinit var binding:ActivityMainBinding
+
     lateinit var eventListener : ValueEventListener
     lateinit var root: View
     var foodname: String = ""
