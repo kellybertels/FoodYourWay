@@ -53,7 +53,9 @@ class FoodFragment : Fragment(), AnkoLogger {
         loader = createLoader(activity!!)
         activity?.title = getString(R.string.action_donate)
         val spinner: Spinner = root.findViewById(R.id.food_spinner)
-// Create an ArrayAdapter using the string array and a default spinner layout
+        val descriptionArray: Array <String> =resources.getStringArray(R.array.food_description_array)
+        val priceArray: Array <String> =resources.getStringArray(R.array.food_price_array)
+        // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter.createFromResource(
             root.context,
             R.array.food_array,//will be changed on future to array created from json file( create method to load from json array
@@ -67,9 +69,12 @@ class FoodFragment : Fragment(), AnkoLogger {
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
                 foodname= parent.getItemAtPosition(position) as String
+                productTitle.text=foodname
+                itemDesc.text= descriptionArray.get(position)
+                price.text=priceArray.get(position)
 
                 //tests if the array selected works showing id and position in the array food_array
-              //  showLoader(loader, "onItemSelected position = $position id = $id")
+               //  showLoader(loader, "onItemSelected position = $position id = $id")
                // info("onItemSelected position = $position id = $id")
             }
 
@@ -85,7 +90,12 @@ class FoodFragment : Fragment(), AnkoLogger {
 
         root.amountPicker.setOnValueChangedListener { _, _, newVal ->
             //Display the newly selected number to paymentAmount
+           // var total: Int = 0
+          // var total = newVal * Integer.parseInt(price.text as String)
+          //  var total = newVal * Integer.parseInt(price.text as String)
+
             root.paymentAmount.setText("$newVal")
+            //root.paymentAmount.setText("$total")
         }
         setButtonListener(root)
         return root;
@@ -99,10 +109,13 @@ class FoodFragment : Fragment(), AnkoLogger {
             }
     }
 
+    //button add
     fun setButtonListener( layout: View) {
         layout.addButton.setOnClickListener {
             val amount = if (layout.paymentAmount.text.isNotEmpty())
                 layout.paymentAmount.text.toString().toInt() else layout.amountPicker.value
+//adding sum here the price
+           // var total = amount * Integer.parseInt(price.text as String)
 
                 val alergens =
                        if(layout.alergensGroup.checkedRadioButtonId == R.id.GlutenFree2) "GlutenFree"
@@ -112,6 +125,7 @@ class FoodFragment : Fragment(), AnkoLogger {
                         FoodModel(
                                 paymenttype = alergens,
                                 amount = amount,
+                           // amount = total,
                                 profilepic = app.userImage.toString(),
                                 email = app.auth.currentUser?.email,
                                 foodname = foodname
@@ -245,6 +259,8 @@ val childrenKelly =snapshot.children
                 val children = snapshot.children
                 children.forEach {
                    val product = it.getValue<FoodModel>(FoodModel::class.java)
+
+
                     //calculation to add up total donated with amount
                     totalDonated += product!!.amount
                 }
@@ -259,6 +275,8 @@ val childrenKelly =snapshot.children
             .addValueEventListener(eventListener)
     }
 }
+
+
 
 
 
