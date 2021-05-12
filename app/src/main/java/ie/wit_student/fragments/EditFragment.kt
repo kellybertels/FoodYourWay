@@ -1,9 +1,6 @@
 package ie.wit_student.fragments
 
-
-import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -49,9 +46,9 @@ class EditFragment : Fragment(), AnkoLogger {
         loader = createLoader(activity!!)
 
         root.editAmount.setText(editOrder!!.amount.toString())
-        root.editPaymenttype.setText(editOrder!!.paymenttype)
+       // root.editPaymenttype.text = editOrder!!.paymenttype
         root.editMessage.setText(editOrder!!.message)
-        root.editUpvotes.setText(editOrder!!.upvotes.toString())
+       // root.editUpvotes.setText(editOrder!!.upvotes.toString())
 
         root.editUpdateButton.setOnClickListener {
             showLoader(loader, "Updating Order on Server...")
@@ -62,7 +59,7 @@ class EditFragment : Fragment(), AnkoLogger {
         }
 
 
-        root.editImageButton.setOnClickListener {
+      //  root.editImageButton.setOnClickListener {
             //showLoader(loader,"Try to show photo selector")
 
             // Code that doesnt link with what I have ( attempted)
@@ -75,7 +72,7 @@ class EditFragment : Fragment(), AnkoLogger {
             updateOrder(editOrder!!.uid, editOrder!!)
             updateUserOrder(app.auth.currentUser!!.uid,
                     editOrder!!.uid, editOrder!!)*/
-        }
+    //    }
      /*   override_fun onActivityResult(requestCode:Int, resultCode:Int,data:Intent?){
             super.onActivityResult(targetRequestCode,resultCode,data)
         }*/
@@ -98,7 +95,7 @@ class EditFragment : Fragment(), AnkoLogger {
     fun updateOrderData() {
         editOrder!!.amount = root.editAmount.text.toString().toInt()
         editOrder!!.message = root.editMessage.text.toString()
-        editOrder!!.upvotes = root.editUpvotes.text.toString().toInt()
+       // editOrder!!.upvotes = root.editUpvotes.text.toString().toInt()
     }
 
     fun updateUserOrder(userId: String, uid: String?, product: FoodModel) {

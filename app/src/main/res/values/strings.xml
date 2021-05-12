@@ -1,32 +1,13 @@
 <resources>
     <string name="app_name">Food Your Way</string>
+    <string name="appTitle">Welcome to FWY</string>
+
+
+    <!-- Bar-menu -->
     <string name="action_donate">Settings</string>
     <string name="action_basket_name">Basket</string>
-    <string name="text_basket_edit">Slide Right to edit your order</string>
-    <string name="text_basket_delete">Slide Left to delete your order</string>
-    <string name="appTitle">Welcome to FWY</string>
-    <string name="appSubtitle">Please Give Generously</string>
-    <string name="addButton">Add to Basket</string>
-    <string name="glutenfree">GlutenFree</string>
-    <string name="productTitle">Product Name</string>
-    <string name="vegan">Vegan</string>
-    <string name="amount">Amount</string>
-    <string name="messageDesc">User message.</string> //basket layout
-    <string name="messageDescription">Description of the product</string> //menu layout
-    <string name="total">Total so Far</string>
-    <string name="totalSoFar">$ Total</string>
-    <string name="basketTitle">Title</string>
-    <string name="defaultAmount">00</string>
-    <string name="defaultMethod">N/A</string>
-    <string name="enter_amount">Enter Amount</string>
-    <string name="action_test">TEstingString</string>
-    <string name="price"> € 5,00</string>
-    <string name="quantity_textView">quantity</string>
-    <string name="dairyfree">DairyFree</string>
 
-
-
-
+    <!-- Heading -and-Navigation Drawer-->
     <string name="title_activity_home">Home</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -34,23 +15,52 @@
     <string name="nav_header_subtitle">http://foodyourway.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="messageLoading">Please wait while we Connect to the Server…</string>
 
+    <!-- Menu -->
     <string name="menu_fyw">Menu</string>
     <string name="menu_basket">Basket</string>
     <string name="menu_recipes">All Recipes</string>
     <string name="menu_about">About Us</string>
     <string name="menu_share">Create Own Recipe</string>
     <string name="menu_send">Payment Details</string>
-
+    <string name="menu_orders_all">All Orders</string>
+    <!-- About - fragment-->
     <string name="aboutus_title">Food you way </string>
     <string name="aboutus_message">We want to make your happy, we are specialised,\n\nin Making Delicious Healthy Foods for you.\n\n Let us know how you feel!</string>
 
-    <string name="messageLoading">Please wait while we Connect to the Server...</string>
+    <!-- Home- -->
+    <string name="glutenfree">GlutenFree</string>
+    <string name="productTitle">Product Name</string>
+    <string name="vegan">Vegan</string>
+    <string name="amount">Amount</string>
+    <string name="total">Total so Far</string>
+    <string name="totalSoFar">$ Total</string>
+    <string name="defaultAmount">00</string>
+    <string name="defaultMethod">N/A</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="action_test">TEstingString</string>
+    <string name="price"> € 5,00</string>
+    <string name="quantity_textView">quantity</string>
+    <string name="dairyfree">DairyFree</string>
+    <string name="messageDescription">Description of the product</string>
+    //menu layout
 
+    <!-- Basket -->
+
+    <string name="text_basket_edit">Slide Right to edit your order</string>
+    <string name="text_basket_delete">Slide Left to delete your order</string>
+    <string name="addButton">Add to Basket</string>
+    <string name="basketTitle">Title</string>
+    <string name="messageDesc">User message.</string>
+    //basket layout
+
+    <!-- Edit - fragment_edit strings-->
+    <string name="txtUserMessage">Anything else we need to know? Write it bellow:</string>
     <string name="action_edit">Edit Order</string>
     <string name="action_update">Update</string>
     <string name="message_edit">Please Update the order Details Below</string>
-    <string name="img_button">Change Recipe Image</string>
+    <string name="txtQuantity">Quantity of items:</string>
 
     <!-- START Firebase Resources-->
 
@@ -75,15 +85,35 @@
     <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
     <string name="emailpassword_title_text">Please Login Below</string>
 
-    <string name="menu_orders_all">All Orders</string>
+
     <string name="select_profile_image">Select Profile Image</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="edit_txt_example1">Highly alergic to peanuts?</string>
+    <string name="edit_txt_example0">example:</string>
+    <string name="edit_txt_example2">sauce on the side.</string>
     <!--END Firebase Resources-->
 
+
+    <!--Array for implementing spinner/filter-->
     <string-array name="food_array">
         <item>Vegan Burger</item>
         <item>Salad</item>
         <item>GF_Kebab</item>
     </string-array>
+
+    <string-array name="food_description_array">
+        <item>Sour dough bread, with a delicious pesto vegan sauce.</item>
+        <item>Mix of leaves with goat cheese.</item>
+        <item>Gluten free bread, with a delicious kebab meat.</item>
+    </string-array>
+
+
+    <!--his will change to an integer at futurte, to sum the amount-->
+    <string-array name="food_price_array">
+        <item>5.00</item>
+        <item>4.00</item>
+        <item>7.00</item>
+    </string-array>
+
 </resources>

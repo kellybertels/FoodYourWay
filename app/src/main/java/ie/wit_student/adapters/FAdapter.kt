@@ -58,6 +58,7 @@ class FAdapter(var products: ArrayList<FoodModel>,
            //itemView.appSubtitle.text =product.message
             itemView.messageDesc.text = product.message
             itemView.textItemName.text = product.foodname
+            itemView.order_name.text = product.foodname
 
             if(!reportAll)
                 itemView.setOnClickListener { listener.onOrderClick(product) }
