@@ -18,8 +18,8 @@
         <ImageView
             android:id="@+id/icon"
             style="@style/ThemeOverlay.FirebaseIcon"
-            android:layout_width="355dp"
-            android:layout_height="346dp"
+            android:layout_width="346dp"
+            android:layout_height="297dp"
             android:contentDescription="@string/desc_firebase_lockup"
             app:srcCompat="@mipmap/ic_fyw_login_banner_foreground" />
 

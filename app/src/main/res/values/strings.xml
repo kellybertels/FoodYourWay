@@ -3,7 +3,6 @@
     <string name="appTitle">Welcome to FWY</string>
 
 
-
     <!-- Bar-menu -->
     <string name="action_donate">Settings</string>
     <string name="action_basket_name">Basket</string>
@@ -44,7 +43,8 @@
     <string name="price"> € 5,00</string>
     <string name="quantity_textView">quantity</string>
     <string name="dairyfree">DairyFree</string>
-    <string name="messageDescription">Description of the product</string> //menu layout
+    <string name="messageDescription">Description of the product</string>
+    //menu layout
 
     <!-- Basket -->
 
@@ -52,10 +52,11 @@
     <string name="text_basket_delete">Slide Left to delete your order</string>
     <string name="addButton">Add to Basket</string>
     <string name="basketTitle">Title</string>
-    <string name="messageDesc">User message.</string> //basket layout
+    <string name="messageDesc">User message.</string>
+    //basket layout
 
     <!-- Edit - fragment_edit strings-->
-    <string name ="txtUserMessage">Anything else we need to know? Write it bellow:</string>
+    <string name="txtUserMessage">Anything else we need to know? Write it bellow:</string>
     <string name="action_edit">Edit Order</string>
     <string name="action_update">Update</string>
     <string name="message_edit">Please Update the order Details Below</string>
