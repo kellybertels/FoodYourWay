@@ -11,7 +11,7 @@ import ie.wit_student.fragments.FoodFragment
 import ie.wit_student.models.FoodModel
 import jp.wasabeef.picasso.transformations.CropCircleTransformation
 import kotlinx.android.synthetic.main.card_product.view.*
-import kotlinx.android.synthetic.main.card_product.view.alergensGroup
+import kotlinx.android.synthetic.main.card_product.view.alergens
 import kotlinx.android.synthetic.main.fragment_edit.view.*
 import kotlinx.android.synthetic.main.fragment_list.view.*
 
@@ -54,7 +54,7 @@ class FAdapter(var products: ArrayList<FoodModel>,
         fun bind(product: FoodModel, listener: OrdersListener, reportAll: Boolean) {
             itemView.tag = product
             itemView.paymentamount.text = product.amount.toString()
-            itemView.alergensGroup.text = product.paymenttype
+            itemView.alergens.text = product.paymenttype
            //itemView.appSubtitle.text =product.message
             itemView.messageDesc.text = product.message
             itemView.textItemName.text = product.foodname

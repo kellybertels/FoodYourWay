@@ -63,7 +63,7 @@
             android:layout_marginStart="23dp"
             android:layout_marginTop="22dp"
             android:layout_marginEnd="2dp"
-            android:layout_toStartOf="@+id/alergensGroup"
+            android:layout_toStartOf="@+id/alergens"
             android:layout_toEndOf="@+id/imageIcon"
             android:text="@string/messageDesc"
             android:textAlignment="viewStart"
@@ -71,7 +71,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/alergensGroup"
+            android:id="@+id/alergens"
             android:layout_width="89dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -90,7 +90,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="22dp"
             android:layout_marginTop="10dp"
-            android:layout_toEndOf="@id/alergensGroup"
+            android:layout_toEndOf="@id/alergens"
             android:contentDescription="image of V"
             app:srcCompat="@android:drawable/checkbox_on_background" />
 
@@ -98,7 +98,7 @@
             android:id="@+id/textItemName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/alergensGroup"
+            android:layout_below="@+id/alergens"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="62dp"
             android:layout_marginEnd="110dp"
