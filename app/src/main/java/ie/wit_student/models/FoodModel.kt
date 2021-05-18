@@ -11,6 +11,7 @@ import kotlinx.android.parcel.Parcelize
 data class FoodModel(
     var uid: String? = "",
     var paymenttype: String = "",
+    var alergens: String="",
     var amount: Int = 0,
     var message: String = "a message",
     var foodname: String ="Item Name",
@@ -34,7 +35,10 @@ data class FoodModel(
             //"upvotes" to upvotes,
             "profilepic" to profilepic,
             "email" to email,
-            "dairy" to dairy
+            "dairy" to dairy,
+           // "alergens" to alergens
+           // "paymenttype" to alergens,
+           // "alergensG" to alergensGroup
         )
     }
 }
